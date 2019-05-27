@@ -143,7 +143,7 @@ def execute_option(selection, selected_sex, year, state):
 
 if __name__ == '__main__':
     URI = 'https://api.dane.gov.pl/resources/17363/data'
-    data = fetchData(URI, limit=10)
+    data = fetchData(URI)
 
     polska = State('Polska')
     for data_list in data:
